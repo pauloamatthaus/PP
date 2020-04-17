@@ -56,7 +56,7 @@ export default function Register() {
 
         <form onSubmit={handleRegister}>
           <input
-            placeholder="Nome da ONG"
+            placeholder="Nome da Empresa"
             value={nome}
             onChange={e => setNome(e.target.value)} />
 
