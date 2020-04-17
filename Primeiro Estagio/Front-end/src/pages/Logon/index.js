@@ -8,7 +8,7 @@ import './style.css';
 import logoImg from '../../assets/logo.svg';
 import heroesImg from '../../assets/heroes.png';
 
-export default function Logon(){
+export default function Logon() {
   const [id, setId] = useState('');
   const history = useHistory();
 
@@ -30,25 +30,25 @@ export default function Logon(){
   return (
     <div className="logon-container">
       <section className="form">
-        <img src={logoImg} alt="Logo"/>
+        <img src={logoImg} alt="Logo" />
 
         <form onSubmit={heandleLogin}>
-          <h1>Faça seu Logon</h1>
+          <h1>Faça seu Login</h1>
 
-          <input 
+          <input
             placeholder="Sua ID"
             value={id}
-            onChange={e => setId(e.target.value)}/>
+            onChange={e => setId(e.target.value)} />
           <button className="button" type="submit">Entrar</button>
 
           <Link className="back-link" to="/register">
-            <FiLogIn size={16} color="#E02041"/>
+            <FiLogIn size={16} color="#E02041" />
             Não tenho cadastro
           </Link>
         </form>
       </section>
 
-      <img src={heroesImg} alt="Heroes"/>
+      <img src={heroesImg} alt="Heroes" />
     </div>
   )
 }

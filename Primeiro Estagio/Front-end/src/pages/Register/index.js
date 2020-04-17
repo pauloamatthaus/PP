@@ -16,7 +16,7 @@ export default function Register() {
 
   const history = useHistory();
 
-  async function handleRegister(e) { 
+  async function handleRegister(e) {
     e.preventDefault()
 
     const data = {
@@ -41,48 +41,47 @@ export default function Register() {
     <div className="register-container">
       <div className="content">
         <section>
-          <img src={logoImg} alt="Be The Hero"/>
+          <img src={logoImg} alt="Be The Hero" />
 
           <h1>Cadastro</h1>
           <p>
-            Faça o seu cadastro, entre na plataforma e ajuda as pessoas a
-            encontrar os casos de sua ONG.
+            Realize seu Cadastro em nossa plataforma!
           </p>
 
           <Link className="back-link" to="/">
-            <FiArrowLeft size={16} color="#E02041"/>
+            <FiArrowLeft size={16} color="#E02041" />
             Voltar
           </Link>
         </section>
 
         <form onSubmit={handleRegister}>
-          <input 
+          <input
             placeholder="Nome da ONG"
             value={nome}
-            onChange={e => setNome(e.target.value)}/>
+            onChange={e => setNome(e.target.value)} />
 
-          <input 
-            type="email" 
+          <input
+            type="email"
             placeholder="email"
             value={email}
-            onChange={e => setEmail(e.target.value)}/>
+            onChange={e => setEmail(e.target.value)} />
 
-          <input 
+          <input
             placeholder="Whatsapp"
             value={whatsapp}
-            onChange={e => setWhatsapp(e.target.value)}/>
+            onChange={e => setWhatsapp(e.target.value)} />
 
           <div className="input-group">
-            <input 
+            <input
               placeholder="Cidade"
               value={cidade}
-              onChange={e => setCidade(e.target.value)}/>
+              onChange={e => setCidade(e.target.value)} />
 
-            <input 
-              placeholder="UF" 
+            <input
+              placeholder="UF"
               style={{ width: 80 }}
               value={uf}
-              onChange={e => setUf(e.target.value)}/>
+              onChange={e => setUf(e.target.value)} />
           </div>
 
           <button className="button" type="submit">Cadastrar</button>
